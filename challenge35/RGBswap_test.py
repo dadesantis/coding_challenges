@@ -18,6 +18,13 @@ def main():
     min_nums = max_nums // 10
     inc = 1000
 
+    print("Example:")
+    ex = generate_rgb_list(15)
+    print(ex)
+    swap(ex)
+    print(ex)
+    print('- '*24)
+
     for i in range(min_nums, max_nums+inc, inc):
         test_list = generate_rgb_list(i)
         start = t.perf_counter()
