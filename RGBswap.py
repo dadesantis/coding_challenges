@@ -5,6 +5,7 @@
 
 import time as t
 
+
 def swap(letters):
     r_index = 0
     g_index = 0
