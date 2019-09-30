@@ -1,6 +1,3 @@
-import time as t
-
-
 # Organizes the characters in the array using swaps, such
 # that they end up in the order RGB
 def swap(letters):
@@ -26,19 +23,3 @@ def swap(letters):
 
     # The Bs have been sorted as a result of the other swaps, so return the sorted array.
     return letters
-
-
-ex = ['R', 'G', 'G', 'B', 'R', 'B', 'B', 'R', 'R', 'G']
-ex1 = ['G', 'G', 'G', 'B', 'B', 'R', 'R', 'G', 'G', 'B']
-
-print("ex before", ex)
-start = t.perf_counter()
-swap(ex)
-print('ex time: {}s'.format(t.perf_counter() - start))
-print("ex after", ex)
-
-print("ex1 before", ex1)
-start = t.perf_counter()
-swap(ex1)
-print('ex1 time: {}s'.format(t.perf_counter() - start))
-print("ex1 after", ex1)
