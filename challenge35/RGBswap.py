@@ -1,7 +1,7 @@
 # Organizes the characters in the array using swaps, such
 # that they end up in the order RGB
 def swap(letters):
-    # Keep track of the R and G indexes
+    # Keep track of the latest R index
     r_index = 0
 
     # First, place all the Rs in the beginning
