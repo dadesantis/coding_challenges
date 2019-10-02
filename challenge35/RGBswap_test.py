@@ -14,9 +14,9 @@ def generate_rgb_list(num_items):
 
 
 def main():
-    max_nums = 10000
+    max_nums = 10**6
     min_nums = max_nums // 10
-    inc = 1000
+    inc = 100000
 
     print("Example:")
     ex = generate_rgb_list(15)
@@ -29,7 +29,7 @@ def main():
         test_list = generate_rgb_list(i)
         start = t.perf_counter()
         swap(test_list)
-        print('swap time for {} items: {}ms'.format(i, (t.perf_counter() - start)*10**3))
+        print('swap time for {} items: {}s'.format(i, t.perf_counter() - start))
         print('- '*24)
 
 
